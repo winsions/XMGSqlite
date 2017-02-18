@@ -18,5 +18,5 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "XMGSqlite2/Classes/**/*"
+  "source_files": "XMGSqlite/Classes/**/*"
 }

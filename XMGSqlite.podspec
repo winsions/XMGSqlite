@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'XMGSqlite2/Classes/**/*'
+  s.source_files = 'XMGSqlite/Classes/**/*'
   
   # s.resource_bundles = {
   #   'XMGSqlite' => ['XMGSqlite/Assets/*.png']
