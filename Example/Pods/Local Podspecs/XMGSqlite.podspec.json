@@ -1,0 +1,22 @@
+{
+  "name": "XMGSqlite",
+  "version": "0.1.0",
+  "summary": "XMGSqlite.",
+  "description": "\"数据库学习嘻嘻嘻嘻嘻嘻嘻嘻嘻\"",
+  "homepage": "https://coding.net/u/seemygo_wangshunzi/p/XMGSqlite",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wangshunzi": "123@qq.com"
+  },
+  "source": {
+    "git": "https://git.coding.net/seemygo_wangshunzi/XMGSqlite.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XMGSqlite2/Classes/**/*"
+}

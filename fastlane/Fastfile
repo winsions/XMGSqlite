@@ -1,0 +1,36 @@
+
+desc 'ManagerLib 使用这个航道, 可以快速的对自己的私有库, 进行升级维护'
+lane :ManagerLib do |options|
+
+tagName = options[:tag]
+targetName = options[:target]
+
+# 具体这个巷道上面执行哪些行为
+
+# 1. pod install
+cocoapods(
+clean: true,
+podfile: "./Example/Podfile"
+)
+
+# 2. git add .
+git_add(path: ".")
+#    git commit -m 'xxx'
+git_commit(path: ".", message: "版本升级维护")
+#    git push origin master
+push_to_git_remote
+
+# 3. git tag 标签名称
+add_git_tag(
+tag: tagName
+)
+#    git push --tags
+push_git_tags
+
+# 4. pod spec lint
+pod_lib_lint(allow_warnings: true)
+#    pod repo push XXXX xxx.podspec
+pod_push(path: "#{targetName}.podspec", repo: "XMGFMSpecs", allow_warnings: true)
+
+
+end

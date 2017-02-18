@@ -1,0 +1,16 @@
+PODS:
+  - XMGSqlite (0.1.0)
+
+DEPENDENCIES:
+  - XMGSqlite (from `../`)
+
+EXTERNAL SOURCES:
+  XMGSqlite:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XMGSqlite: 280f5f2bcf04baa36ae964b5ca0eb212133e8672
+
+PODFILE CHECKSUM: 63e424f29426fb915a77da5ef19a56384504349c
+
+COCOAPODS: 1.2.0.beta.1
